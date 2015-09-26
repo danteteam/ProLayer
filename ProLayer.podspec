@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  #s.source       = { :git => "https://danteteam@github.com/danteteam/ProLayer.git", :tag => "0.0.1" }
+  #s.source       = { :git => "https://github.com/danteteam/ProLayer.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
