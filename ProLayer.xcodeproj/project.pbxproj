@@ -10,6 +10,7 @@
 		2C65BB321BB6EAC200C8EAB3 /* ProLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C65BB311BB6EAC200C8EAB3 /* ProLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C65BB391BB6EAC200C8EAB3 /* ProLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C65BB2E1BB6EAC200C8EAB3 /* ProLayer.framework */; settings = {ASSET_TAGS = (); }; };
 		2C65BB3E1BB6EAC200C8EAB3 /* ProLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65BB3D1BB6EAC200C8EAB3 /* ProLayerTests.swift */; };
+		2C65BB491BB6EB0A00C8EAB3 /* ProLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C65BB481BB6EB0A00C8EAB3 /* ProLayer.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		2C65BB381BB6EAC200C8EAB3 /* ProLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C65BB3D1BB6EAC200C8EAB3 /* ProLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProLayerTests.swift; sourceTree = "<group>"; };
 		2C65BB3F1BB6EAC200C8EAB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C65BB481BB6EB0A00C8EAB3 /* ProLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		2C65BB301BB6EAC200C8EAB3 /* ProLayer */ = {
 			isa = PBXGroup;
 			children = (
+				2C65BB481BB6EB0A00C8EAB3 /* ProLayer.swift */,
 				2C65BB311BB6EAC200C8EAB3 /* ProLayer.h */,
 				2C65BB331BB6EAC200C8EAB3 /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 		2C65BB251BB6EAC200C8EAB3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Dantelab;
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C65BB491BB6EB0A00C8EAB3 /* ProLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 		2C65BB431BB6EAC200C8EAB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dantelab.ProLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2C65BB441BB6EAC200C8EAB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
